@@ -1,0 +1,9 @@
+name: "Website del senior Dante"
+output_dir: "."
+navbar:
+  title: "Website del senior Dante"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Acerca de"
+      href: about.html
