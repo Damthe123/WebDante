@@ -5,3 +5,38 @@ title: "Inicio"
 Hola mis líderes :3
 
 ![](images/wallpaperflare.com_wallpaper.jpg)
+
+Una tabla para demostrar que se pueden subir tablas
+
+|      |      |
+|------|------|
+| 1964 | 31.6 |
+| 1965 | 32.8 |
+| 1966 | 45.2 |
+| 1967 | 25.8 |
+| 1968 | 24.2 |
+| 1969 | 28.6 |
+| 1970 | 21.9 |
+| 1971 | 28.5 |
+| 1972 | 27.8 |
+| 1973 | 28.5 |
+| 1974 | 38.4 |
+| 1975 | 29.9 |
+
+Este es un gráfico para demostrar que se pueden hacer gráficos
+
+```{r}
+plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975), y=c(31.6,32.8,45.2,25.8,24.2,28.6,21.9,28.5,27.8,28.5,37.4,29.9),type = "l", ylab = "Precipitación máxima anual (mm)", xlab = "Años")
+```
+
+Este es un mapa para demostrar que tan bien salen los mapas
+
+```{r echo=FALSE}
+mapa_mundo <- map_data("world")
+
+mapa_mundo %>%
+  ggplot() +
+  geom_polygon(aes( x= long, y = lat, group = group),
+               fill = "black",
+               color = "white")
+```
