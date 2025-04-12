@@ -5,5 +5,9 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Acerca de"
+    - text: "Acerca de esta web"
       href: about.html
+output:
+  html_document:
+    theme: united
+    highlight: textmate

@@ -1,5 +1,5 @@
 ---
-title: "Acerca de"
+title: "Acerca de esta web"
 ---
 
 Yo soy el senior Dante y este es mi website.
