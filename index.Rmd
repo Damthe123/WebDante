@@ -1,6 +1,25 @@
 ---
 title: "Inicio"
+output: 
+  html_document: 
+    fig_width: 11
+    fig_caption: yes
 ---
+
+```{r message=FALSE, warning=FALSE}
+if (!require(pacman)) install.packages("pacman")
+p_load(
+  mapdata,
+  ggplot2,
+  ggrepel,
+  maps,
+  dplyr 
+)
+```
+
+```{r}
+
+```
 
 Hola mis líderes :3
 
@@ -32,7 +51,7 @@ plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975), y=c(31.6,
 Este es un mapa para demostrar que tan bien salen los mapas
 
 ```{r echo=FALSE}
-mapa_mundo <- map_data("world")
+mapa_mundo <- map_data("state")
 
 mapa_mundo %>%
   ggplot() +
