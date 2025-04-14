@@ -52,7 +52,7 @@ g_hist <- ggplot(data = tble, aes(x = average)) +
   theme()
 ```
 
-```{r pressure, echo=FALSE, include=TRUE, warning=FALSE, fig.width = 7, fig.height = 5, fig.align = 'center'}
+```{r echo=FALSE, warning=FALSE, fig.align = 'center'}
 g_hist
 ```
 
@@ -60,7 +60,7 @@ g_hist
 
 El comportamiento a nivel espacial de estos datos se ilustra en el siguiente interactivo.
 
-```{r message=FALSE, fig.align = FALSE, echo = FALSE}
+```{r echo=FALSE, fig.align = 'center'}
 cnmr <- colorNumeric(palette = 'inferno', domain = dbse$y2016, n = 9)
 
 leaflet() %>% 
@@ -88,7 +88,7 @@ leaflet() %>%
 
 Ahora bien revisemos el comportamiento de las 3 principales ciudades del país en el tiempo, entre 2016 y 2021.
 
-```{r message=FALSE, fig.align = FALSE, echo = FALSE}
+```{r echo=FALSE}
 main <- tble %>% 
   filter(mpio %in% c('Cali', 'Medellín', 'Bogotá')) %>% 
   dplyr::select(mpio, y2016:y2021) %>% 
@@ -105,6 +105,6 @@ g_lne <- ggplot(data = main, aes(x = year, y = value, col = mpio)) +
         plot.title = element_text(face = 'bold', hjust = 0.5))
 ```
 
-```{r line, echo=FALSE, include=TRUE, message = FALSE, warning=FALSE, fig.width = 7, fig.height = 5, fig.align = 'center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 ggplotly(g_lne)
 ```
