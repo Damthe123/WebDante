@@ -1,31 +1,30 @@
 ---
-title: "Inicio"
+title: "Bienvenido"
 output: 
   html_document: 
     fig_width: 11
     fig_caption: yes
 ---
 
-```{r message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 if (!require(pacman)) install.packages("pacman")
 p_load(
   mapdata,
   ggplot2,
   ggrepel,
   maps,
-  dplyr 
+  dplyr,
+  tidyverse
 )
 ```
 
-```{r}
+Hola a todos estimados.
 
-```
-
-Hola mis líderes :3
+Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
 ![](images/wallpaperflare.com_wallpaper.jpg)
 
-Una tabla para demostrar que se pueden subir tablas
+Una tabla para demostrar que se pueden subir tablas.
 
 |      |      |
 |------|------|
@@ -42,10 +41,16 @@ Una tabla para demostrar que se pueden subir tablas
 | 1974 | 38.4 |
 | 1975 | 29.9 |
 
-Este es un gráfico para demostrar que se pueden hacer gráficos
+Este es un gráfico para demostrar que se pueden hacer gráficos.
 
 ```{r echo=FALSE}
-plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975), y=c(31.6,32.8,45.2,25.8,24.2,28.6,21.9,28.5,27.8,28.5,37.4,29.9),type = "l", ylab = "Precipitación máxima anual (mm)", xlab = "Años")
+plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975), 
+     y=c(31.6,32.8,45.2,25.8,24.2,28.6,21.9,28.5,27.8,28.5,37.4,29.9),
+     type = "o", 
+     ylab = "Precipitación máxima anual (mm)", 
+     xlab = "Años", 
+     main = "Gráfico de prueba",
+     pch =8)
 ```
 
 Este es un mapa para demostrar que tan bien salen los mapas
