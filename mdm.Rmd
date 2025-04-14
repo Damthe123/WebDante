@@ -2,16 +2,6 @@
 title: "Uwu"
 author: 
   - Ing. Dante Ramiro Lucano Alarco
-output: 
-  html_document:
-    css: style.css
-    toc: true
-    theme: united
-    toc_depth: 4
-    highlight: tango
-editor_options: 
-  markdown: 
-    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -39,8 +29,7 @@ pacman::p_load(terra,
 
 #### Histograma del índice de desempeño municipal
 
-La siguiente figura ilustra el histograma, tomando como valor el
-promedio entre el año 2016 al 2021.
+La siguiente figura ilustra el histograma, tomando como valor el promedio entre el año 2016 al 2021.
 
 ```{r include=FALSE}
 tble <- read_csv('tble/mdm_sub.csv')
@@ -69,8 +58,7 @@ g_hist
 
 #### Mapa del índice de desempeño a nivel municipal
 
-El comportamiento a nivel espacial de estos datos se ilustra en el
-siguiente interactivo.
+El comportamiento a nivel espacial de estos datos se ilustra en el siguiente interactivo.
 
 ```{r message=FALSE, fig.align = FALSE, echo = FALSE}
 cnmr <- colorNumeric(palette = 'inferno', domain = dbse$y2016, n = 9)
@@ -98,8 +86,7 @@ leaflet() %>%
   addResetMapButton() 
 ```
 
-Ahora bien revisemos el comportamiento de las 3 principales ciudades del
-país en el tiempo, entre 2016 y 2021.
+Ahora bien revisemos el comportamiento de las 3 principales ciudades del país en el tiempo, entre 2016 y 2021.
 
 ```{r message=FALSE, fig.align = FALSE, echo = FALSE}
 main <- tble %>% 
@@ -114,7 +101,6 @@ g_lne <- ggplot(data = main, aes(x = year, y = value, col = mpio)) +
   geom_smooth(se = FALSE, method = 'loess') + 
   ggtitle('Comportamiento anual entre 2016 y el 2021 para el MDD') +
   labs(x = 'Año', y = 'Índice de desempeño municipal', col = 'Municipio') +
-  theme_ipsum_ps() + 
   theme(legend.position = 'bottom', 
         plot.title = element_text(face = 'bold', hjust = 0.5))
 ```
