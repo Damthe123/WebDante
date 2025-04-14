@@ -2,7 +2,7 @@
 title: "Bienvenido"
 output: 
   html_document: 
-    fig_width: 11
+    fig_width: 5
     fig_caption: yes
 ---
 
