@@ -5,10 +5,10 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
+    - text: "Otros"
+      href: mdm.html
     - text: "Acerca de esta web"
       href: about.html
-    - text: "Ejemplo de otra web"
-      href: mdm.html
 output:
   html_document:
     theme: united
