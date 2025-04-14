@@ -1,8 +1,7 @@
 ---
-title: "Medida de Desempeño Municipal - DNP"
-subtitle: "Un geógrafo en YouTube" 
+title: "Uwu"
 author: 
-  - Msc. Fabio Alexander Castro Llanos
+  - Ing. Dante Ramiro Lucano Alarco
 output: 
   html_document:
     css: style.css
@@ -28,71 +27,12 @@ library(pacman)
 pacman::p_load(terra, sf, fs, hablar, gcookbook, plotly, extrafont, RColorBrewer, rmapshaper, readxl, glue, hrbrthemes, tidyverse, leaflet, htmltools, leaflet.extras)
 ```
 
-En el presente documento describimos el índice de desempeño municipal
-entre los años 2016 al 2021, esto tomando como referencia los datos de
-esta variable dados por el Departamento Nacional de Planeación. Todo los
-datos aquí descritos se pueden tomar de
-[DNP](https://terridata.dnp.gov.co/index-app.html#/descargas)).
-
-Desde el año 2016, el DNP venía calculando anualmente el Índice de
-Desempeño Integral (IDI), el cual tenía comoobjetivo cuantificar el
-desempeño de las entidades territoriales municipales y departamentales.
-10 años después sepuso en marcha la Medición de Desempeño Municipal
-(MDM), generando así una nueva metodología para evaluar el desempeño de
-los municipios. Paralelamente se creó el índice de desempeño
-departamental, con esta herramientas se esperarnhacer seguimiento a
-indicadores estratégicos, identificar bueans prácticas de gestión y
-apoyar la focalización de la asistencia técnica brindada desde el nivel
-nacional.
-
 ### Estructura del indicador MDD
-
-La MDD se estructura en dos componentes:
-
-**1**. Se enfoca en la gestión, incluye las acciones y decisiones que
-adelanta la administración local que buscan transformar los recursos en
-un mayor bienestar de la población y desarroll. **2**. Se enfoca en los
-resultados del municipio, mide los elementos constitutivos del bienestar
-de la población.
-
-El primer ítem mencionado, está compuesto por cuatro dimensiones y 15
-indicadores, los cuales miden la capacidad de las entidades
-territoriales para
-
-**a**. Generar recursos propios que se traduzcan en inversión <br>
-**b**. Ejecutar los recursos de acuerdo con su presupuesto, planeación o
-asignación inicial <br> **c**. Atender al ciudadano bajo unos
-lineamientosde integridad, libre acceso a la inforamción y uso de
-herramientas tecnológicas <br> **d**. El nivel de gestión de los
-elementos de planeación estratégica para ejecturar sus competencias y
-responsabilidad <br>
-
-El segúndo punto tiene 7 dimensiones que recogen elementos constitutivos
-de bienestar como fin último de desarrollo terirotial y útiles
-
-**a** Educación <br> **b** Salud <br> **c** Servicios públicos <br>
-**d** Seguridad y convivencia <br> **e** Niñez y juventud <br> **f**
-Medio ambiente <br> **g** Trabajo <br>
-
-Tanto para gestión como para resultados, cada indicador tiene la misma
-participación porcentual al interior de cada dimensión, y a su vez cada
-dimensión tiene la misma participación en el puntaje final del
-componente (25% para el caso de gestión, 14,3% para el caso de
-resultados). La calificación oscila entre 0 y 100, siendo 100 un
-desempeño sobresaliente y 0 un muy mal desempeño. La puntación final de
-cada componente es un promedio ponderado de las dimensiones.
-
-Ahora bien, el presente documento ilustra un poco la distribución
-espacial de este indicadores, resaltando aquellos municipios donde los
-indicadores son altos / bajos. Todo esto en el marco de ilustrar el cómo
-realizar un documento RMarkdown que incluya tanto gráficos como mapas
-estáticos e interactivos [Un geógrafo en
-YouTube](youtube.com/FabioCastroLlanos).
 
 #### Histograma del índice de desempeño municipal
 
-La siguiente figura ilustra el histograma de esta variable, tomando como
-valor el promedio entre el año 2016 al 2021.
+La siguiente figura ilustra el histograma, tomando como valor el
+promedio entre el año 2016 al 2021.
 
 ```{r include=FALSE}
 tble <- read_csv('tble/mdm_sub.csv')
@@ -119,11 +59,6 @@ g_hist <- ggplot(data = tble, aes(x = average)) +
 ```{r pressure, echo=FALSE, include=TRUE, warning=FALSE, fig.width = 7, fig.height = 5, fig.align = 'center'}
 g_hist
 ```
-
-Como se puede apreciar en la anterior Figura, la mayor frecuencia de
-municipios se da entre el 45% y el 55%, presentándose aquí el valor de
-la moda, teniendo valores mínimos de 26 y máximos de 80, recordando que
-estos valores son en promedio entre el año 2016 y el año 2021. <br>
 
 #### Mapa del índice de desempeño a nivel municipal
 
