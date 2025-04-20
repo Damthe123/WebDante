@@ -1,11 +1,11 @@
-name: "Website del senior Dante"
+name: "Website de Dante"
 output_dir: "."
 navbar:
-  title: "Website del senior Dante"
+  title: "Website de Dante"
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Otros"
+    - text: "Otros elementos"
       href: mdm.html
     - text: "Acerca de esta web"
       href: about.html

@@ -2,4 +2,4 @@
 title: "Acerca de esta web"
 ---
 
-Yo soy el senior Dante y este es mi website.
+Website creado con R y subido a la web por Github.

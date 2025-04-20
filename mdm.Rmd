@@ -1,5 +1,5 @@
 ---
-title: "Uwu"
+title: "Otros elementos"
 author: 
   - Ing. Dante Ramiro Lucano Alarco
 ---
@@ -23,6 +23,14 @@ pacman::p_load(terra,
                leaflet, 
                htmltools, 
                leaflet.extras)
+```
+
+```{=html}
+<style>
+.html-widget {
+    margin: auto;
+}
+</style>
 ```
 
 ### Estructura del indicador MDD
@@ -60,7 +68,7 @@ g_hist
 
 El comportamiento a nivel espacial de estos datos se ilustra en el siguiente interactivo.
 
-```{r echo=FALSE, fig.align = 'center'}
+```{r echo=FALSE, warning=FALSE}
 cnmr <- colorNumeric(palette = 'inferno', domain = dbse$y2016, n = 9)
 
 leaflet() %>% 
@@ -88,7 +96,7 @@ leaflet() %>%
 
 Ahora bien revisemos el comportamiento de las 3 principales ciudades del país en el tiempo, entre 2016 y 2021.
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 main <- tble %>% 
   filter(mpio %in% c('Cali', 'Medellín', 'Bogotá')) %>% 
   dplyr::select(mpio, y2016:y2021) %>% 
@@ -105,6 +113,6 @@ g_lne <- ggplot(data = main, aes(x = year, y = value, col = mpio)) +
         plot.title = element_text(face = 'bold', hjust = 0.5))
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 ggplotly(g_lne)
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Bienvenido"
+title: "Inicio"
 output: 
   html_document: 
     fig_width: 11
@@ -16,6 +16,8 @@ p_load(
   tidyverse
 )
 ```
+
+# Bienvenidos
 
 Hola a todos.
 
