@@ -1,5 +1,8 @@
 ---
 title: "Otros"
+output: 
+  html_document: 
+    fig_width: 13
 ---
 
 ```{r setup, include=FALSE}
@@ -90,7 +93,7 @@ leaflet() %>%
   addResetMapButton() 
 ```
 
-## Gráfico dinámico 
+## Gráfico dinámico
 
 Ahora bien revisemos el comportamiento de las 3 principales ciudades del país en el tiempo, entre 2016 y 2021.
 
