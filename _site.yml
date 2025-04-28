@@ -5,7 +5,7 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Otros elementos"
+    - text: "Otros"
       href: mdm.html
     - text: "Acerca de esta web"
       href: about.html

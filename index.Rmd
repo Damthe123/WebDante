@@ -2,7 +2,7 @@
 title: "Inicio"
 output: 
   html_document: 
-    fig_width: 11
+    fig_width: 12
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -18,8 +18,6 @@ p_load(
 ```
 
 # Bienvenidos
-
-Hola a todos.
 
 Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
