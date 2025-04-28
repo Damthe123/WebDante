@@ -2,7 +2,7 @@
 title: "Inicio"
 output: 
   html_document: 
-    fig_width: 12
+    fig_width: 13
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -17,7 +17,7 @@ p_load(
 )
 ```
 
-# Bienvenidos
+## Bienvenidos
 
 Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
@@ -25,20 +25,19 @@ Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
 Una tabla para demostrar que se pueden subir tablas.
 
-|      |      |
-|------|------|
-| 1964 | 31.6 |
-| 1965 | 32.8 |
-| 1966 | 45.2 |
-| 1967 | 25.8 |
-| 1968 | 24.2 |
-| 1969 | 28.6 |
-| 1970 | 21.9 |
-| 1971 | 28.5 |
-| 1972 | 27.8 |
-| 1973 | 28.5 |
-| 1974 | 38.4 |
-| 1975 | 29.9 |
+| ID  | Año  | Valor |
+|:---:|:----:|:-----:|
+|  1  | 1965 | 32.8  |
+|  2  | 1966 | 45.2  |
+|  3  | 1967 | 25.8  |
+|  4  | 1968 | 24.2  |
+|  5  | 1969 | 28.6  |
+|  6  | 1970 | 21.9  |
+|  7  | 1971 | 28.5  |
+|  8  | 1972 | 27.8  |
+|  9  | 1973 | 28.5  |
+| 10  | 1974 | 38.4  |
+| 11  | 1975 | 29.9  |
 
 Este es un gráfico para demostrar que se pueden hacer gráficos.
 

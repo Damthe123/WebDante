@@ -1,9 +1,13 @@
 ---
 title: "Acerca de esta web"
-author: 
-  - Ing. Dante Ramiro Lucano Alarco
 ---
+
+## Autor: Ing. Dante Ramiro Lucano Alarco
 
 Website creado con R y Github.
 
-Perfil de Github: <https://github.com/Damthe123>
+Perfiles:
+
+-   [Github](https://github.com/Damthe123)
+
+-   [RPubs](https://rpubs.com/Dante123)
