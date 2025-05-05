@@ -1,8 +1,5 @@
 ---
 title: "Inicio"
-output: 
-  html_document: 
-    fig_width: 13
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}

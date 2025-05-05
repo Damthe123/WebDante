@@ -1,8 +1,5 @@
 ---
 title: "Otros"
-output: 
-  html_document: 
-    fig_width: 13
 ---
 
 ```{r setup, include=FALSE}
@@ -24,14 +21,6 @@ pacman::p_load(terra,
                leaflet, 
                htmltools, 
                leaflet.extras)
-```
-
-```{=html}
-<style>
-.html-widget {
-    margin: auto;
-}
-</style>
 ```
 
 ## Histograma del índice de desempeño municipal
