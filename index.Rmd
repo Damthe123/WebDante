@@ -1,5 +1,9 @@
 ---
 title: "Inicio"
+output:
+  html_document:
+    includes:
+      in_header: Logo.html
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}

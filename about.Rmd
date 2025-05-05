@@ -1,6 +1,18 @@
 ---
 title: "Acerca de esta web"
+output:
+  html_document:
+    includes:
+      in_header: Logo.html
 ---
+
+```{=html}
+<style>
+ .html-widget {
+     margin: auto;
+ }
+ </style>
+```
 
 ## Autor: Ing. Dante Ramiro Lucano Alarco
 
