@@ -36,9 +36,17 @@ Una tabla para demostrar que se pueden subir tablas.
 | 10  | 1974 | 38.4  |
 | 11  | 1975 | 29.9  |
 
+```{=html}
+ <style>
+ .html-widget {
+     margin: auto;
+ }
+ </style>
+```
+
 Este es un gráfico para demostrar que se pueden hacer gráficos.
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'}
 plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975), 
      y=c(31.6,32.8,45.2,25.8,24.2,28.6,21.9,28.5,27.8,28.5,37.4,29.9),
      type = "o", 
@@ -50,7 +58,7 @@ plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975),
 
 Este es un mapa para demostrar que tan bien salen los mapas
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'}
 mapa_mundo <- map_data("state")
 
 mapa_mundo %>%

@@ -48,7 +48,7 @@ g_hist <- ggplot(data = tble, aes(x = average)) +
   theme()
 ```
 
-```{r echo=FALSE, warning=FALSE, fig.align = 'center'}
+```{r echo=FALSE, warning=FALSE}
 g_hist
 ```
 
