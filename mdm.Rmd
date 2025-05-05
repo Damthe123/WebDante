@@ -6,6 +6,14 @@ output:
       in_header: Logo.html
 ---
 
+```{=html}
+<style>
+ .html-widget {
+     margin: auto;
+ }
+ </style>
+```
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(pacman)
@@ -25,14 +33,6 @@ pacman::p_load(terra,
                leaflet, 
                htmltools, 
                leaflet.extras)
-```
-
-```{=html}
-<style>
- .html-widget {
-     margin: auto;
- }
- </style>
 ```
 
 ## Histograma del índice de desempeño municipal
@@ -91,7 +91,8 @@ leaflet() %>%
                                         metric = TRUE, 
                                         imperial = TRUE, 
                                         updateWhenIdle = TRUE)) %>% 
-  addResetMapButton() 
+  addResetMapButton() %>% 
+  addMiniMap(position = "bottomleft")
 ```
 
 ## Gráfico dinámico
