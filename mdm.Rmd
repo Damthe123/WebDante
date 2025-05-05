@@ -64,7 +64,7 @@ g_hist
 
 El comportamiento a nivel espacial de estos datos se ilustra en el siguiente interactivo.
 
-```{r echo=FALSE, warning=FALSE}
+```{r echo=FALSE, warning=FALSE, out.width='100%', fig.width=12}
 cnmr <- colorNumeric(palette = 'inferno', domain = dbse$y2016, n = 9)
 
 leaflet() %>% 
@@ -111,6 +111,6 @@ g_lne <- ggplot(data = main, aes(x = year, y = value, col = mpio)) +
         plot.title = element_text(face = 'bold', hjust = 0.5))
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.width=12}
 ggplotly(g_lne)
 ```
