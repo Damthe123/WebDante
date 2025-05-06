@@ -14,12 +14,16 @@ output:
  </style>
 ```
 
+---
+
 ### 1. Plataforma web de ejemplo con datos de ubicaciones de investigaciones geotécnicas
 
 [Acceder](https://damthe123.github.io/prueba-4/Gueb)
 
 Fecha de publicación: 29/04/2025
 
-### 2. Plataforma web con colección de métricas de estaciones pluviométricas
+---
+
+### 2. Plataforma web con colección de métricas estadísticas de estaciones pluviométricas
 
 *Coming soon*

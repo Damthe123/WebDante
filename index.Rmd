@@ -26,11 +26,17 @@ p_load(
 )
 ```
 
-## Bienvenidos
+---
+
+## Bienvenido
 
 Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
 ![](images/wallpaperflare.com_wallpaper.jpg)
+
+---
+
+## Tabla ejemplo
 
 Una tabla para demostrar que se pueden subir tablas.
 
@@ -48,6 +54,10 @@ Una tabla para demostrar que se pueden subir tablas.
 | 10  | 1974 | 38.4  |
 | 11  | 1975 | 29.9  |
 
+---
+
+## Gráfico ejemplo
+
 Este es un gráfico para demostrar que se pueden hacer gráficos.
 
 ```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'}
@@ -61,10 +71,14 @@ plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975),
 grid()
 ```
 
+---
+
+## Mapa generado ejemplo
+
 Este es un mapa para demostrar que tan bien salen los mapas
 
 ```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'}
-mapa_mundo <- map_data("state")
+mapa_mundo <- map_data("italy")
 
 mapa_mundo %>%
   ggplot() +
