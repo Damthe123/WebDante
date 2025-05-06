@@ -7,7 +7,9 @@ navbar:
       href: index.html
     - text: "Otros"
       href: mdm.html
-    - text: "Acerca de esta web"
+    - text: "Repositorios"
+      href: si.html
+    - text: "Acerca de este sitio web"
       href: about.html
 output:
   html_document:

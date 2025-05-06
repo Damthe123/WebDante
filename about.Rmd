@@ -1,5 +1,5 @@
 ---
-title: "Acerca de esta web"
+title: "Acerca de este sitio web"
 output:
   html_document:
     includes:
@@ -16,10 +16,8 @@ output:
 
 ## Autor: Ing. Dante Ramiro Lucano Alarco
 
-Website creado con R y Github.
+Website creado con R y subido con Github.
 
-Perfiles:
+-   Perfil de [Github](https://github.com/Damthe123)
 
--   [Github](https://github.com/Damthe123)
-
--   [RPubs](https://rpubs.com/Dante123)
+-   Perfil de [RPubs](https://rpubs.com/Dante123)
