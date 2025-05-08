@@ -26,7 +26,7 @@ p_load(
 )
 ```
 
----
+------------------------------------------------------------------------
 
 ## Bienvenido
 
@@ -34,7 +34,7 @@ Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
 
 ![](images/wallpaperflare.com_wallpaper.jpg)
 
----
+------------------------------------------------------------------------
 
 ## Tabla ejemplo
 
@@ -54,7 +54,7 @@ Una tabla para demostrar que se pueden subir tablas.
 | 10  | 1974 | 38.4  |
 | 11  | 1975 | 29.9  |
 
----
+------------------------------------------------------------------------
 
 ## Gráfico ejemplo
 
@@ -71,7 +71,7 @@ plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975),
 grid()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Mapa generado ejemplo
 
@@ -84,5 +84,6 @@ mapa_mundo %>%
   ggplot() +
   geom_polygon(aes( x= long, y = lat, group = group),
                fill = "black",
-               color = "white")
+               color = "white")+
+  theme(aspect.ratio = 1)
 ```

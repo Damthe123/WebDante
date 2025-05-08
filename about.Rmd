@@ -14,7 +14,9 @@ output:
  </style>
 ```
 
-## Autor: Ing. Dante Ramiro Lucano Alarco
+---
+
+### Autor: Ing. Dante Ramiro Lucano Alarco
 
 Website creado con R y subido con Github.
 

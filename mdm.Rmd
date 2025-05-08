@@ -35,6 +35,8 @@ pacman::p_load(terra,
                leaflet.extras)
 ```
 
+---
+
 ## Histograma del índice de desempeño municipal
 
 La siguiente figura ilustra el histograma, tomando como valor el promedio entre el año 2016 al 2021.
@@ -63,6 +65,8 @@ g_hist <- ggplot(data = tble, aes(x = average)) +
 ```{r echo=FALSE, warning=FALSE, fig.align='center', out.width='100%', fig.width=12}
 g_hist
 ```
+
+---
 
 ## Mapa del índice de desempeño a nivel municipal
 
@@ -94,6 +98,8 @@ leaflet() %>%
   addResetMapButton() %>% 
   addMiniMap(position = "bottomleft")
 ```
+
+---
 
 ## Gráfico dinámico
 
