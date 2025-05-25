@@ -14,12 +14,12 @@ output:
  </style>
 ```
 
----
+------------------------------------------------------------------------
 
 ### Autor: Ing. Dante Ramiro Lucano Alarco
 
-Website creado con R y subido con Github.
+Website creado con R. Redes sociales:
 
--   Perfil de [Github](https://github.com/Damthe123)
+-   [Github](https://github.com/Damthe123)
 
--   Perfil de [RPubs](https://rpubs.com/Dante123)
+-   [RPubs](https://rpubs.com/Dante123)

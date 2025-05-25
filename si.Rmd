@@ -16,22 +16,16 @@ output:
 
 ------------------------------------------------------------------------
 
-### 1. Ubicaciones de investigaciones geotécnicas (v. 1)
+### 1. Ubicaciones de investigaciones geotécnicas
 
-[Acceder](https://damthe123.github.io/prueba-4/Gueb)
+-   Versión 1.0: [Acceder](https://damthe123.github.io/prueba-4/Gueb)
 
-Fecha de publicación: 29/04/2025
+-   Versión 1.1: [Acceder](https://rpubs.com/Dante123/ugu)
+
+Ultima actualización: 11/05/2025
 
 ------------------------------------------------------------------------
 
-### 2.  Ubicaciones de investigaciones geotécnicas (v. 2)
-
-[Acceder](https://rpubs.com/Dante123/ugu)
-
-Fecha de publicación: 08/05/2025
-
----
-
-### 3. Colección de métricas estadísticas de estaciones pluviométricas
+### 2. Colección de métricas estadísticas de estaciones pluviométricas
 
 *Coming soon*

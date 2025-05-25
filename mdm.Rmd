@@ -35,6 +35,44 @@ pacman::p_load(terra,
                leaflet.extras)
 ```
 
+------------------------------------------------------------------------
+
+## Tabla ejemplo
+
+Una tabla para demostrar que se pueden subir tablas.
+
+| ID  | Año  | Valor |
+|:---:|:----:|:-----:|
+|  1  | 1965 | 32.8  |
+|  2  | 1966 | 45.2  |
+|  3  | 1967 | 25.8  |
+|  4  | 1968 | 24.2  |
+|  5  | 1969 | 28.6  |
+|  6  | 1970 | 21.9  |
+|  7  | 1971 | 28.5  |
+|  8  | 1972 | 27.8  |
+|  9  | 1973 | 28.5  |
+| 10  | 1974 | 38.4  |
+| 11  | 1975 | 29.9  |
+
+------------------------------------------------------------------------
+
+## Gráfico ejemplo
+
+Este es un gráfico para demostrar que se pueden hacer gráficos.
+
+```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'} plot(x=c(1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975),       y=c(31.6,32.8,45.2,25.8,24.2,28.6,21.9,28.5,27.8,28.5,37.4,29.9),      type = "o",       ylab = "Precipitación máxima anual (mm)",       xlab = "Años",       main = "Gráfico de prueba",      pch =8) grid()}
+```
+
+------------------------------------------------------------------------
+
+## Mapa generado ejemplo
+
+Este es un mapa para demostrar que tan bien salen los mapas
+
+```{r echo=FALSE, fig.align='center', fig.width=10, out.width='100%'} mapa_mundo <- map_data("italy")  mapa_mundo %>%   ggplot() +   geom_polygon(aes( x= long, y = lat, group = group),                fill = "black",                color = "white")+   theme(aspect.ratio = 1)}
+```
+
 ---
 
 ## Histograma del índice de desempeño municipal
@@ -66,7 +104,7 @@ g_hist <- ggplot(data = tble, aes(x = average)) +
 g_hist
 ```
 
----
+------------------------------------------------------------------------
 
 ## Mapa del índice de desempeño a nivel municipal
 
@@ -99,7 +137,7 @@ leaflet() %>%
   addMiniMap(position = "bottomleft")
 ```
 
----
+------------------------------------------------------------------------
 
 ## Gráfico dinámico
 
