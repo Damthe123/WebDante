@@ -1,5 +1,5 @@
 ---
-title: "Acerca de este sitio web"
+title: "Acerca de"
 output:
   html_document:
     includes:

@@ -1,5 +1,5 @@
 ---
-title: "Otros"
+title: "Elementos varios"
 output:
   html_document:
     includes:

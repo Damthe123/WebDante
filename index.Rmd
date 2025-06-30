@@ -28,8 +28,6 @@ p_load(
 
 ------------------------------------------------------------------------
 
-## Bienvenido
-
-Abajo se muestra una imagen para demostrar que se pueden subir imágenes.
+## Bienvenidos
 
 ![](images/wallpaperflare.com_wallpaper.jpg)
