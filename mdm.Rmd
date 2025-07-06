@@ -6,14 +6,6 @@ output:
       in_header: Logo.html
 ---
 
-```{=html}
-<style>
- .html-widget {
-     margin: auto;
- }
- </style>
-```
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(pacman)

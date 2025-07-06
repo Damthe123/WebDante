@@ -6,19 +6,13 @@ output:
       in_header: Logo.html
 ---
 
-```{=html}
-<style>
- .html-widget {
-     margin: auto;
- }
- </style>
-```
-
 ------------------------------------------------------------------------
 
 ### Autor: Ing. Dante Ramiro Lucano Alarco
 
-Website creado con R. Redes sociales:
+Website creado en lenguaje R.
+
+Redes sociales:
 
 -   [Github](https://github.com/Damthe123)
 

@@ -6,14 +6,6 @@ output:
       in_header: Logo.html
 ---
 
-```{=html}
-<style>
- .html-widget {
-     margin: auto;
- }
- </style>
-```
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 if (!require(pacman)) install.packages("pacman")
 p_load(
