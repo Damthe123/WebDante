@@ -5,11 +5,11 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Elementos varios"
+    - text: "Elementos diversos"
       href: mdm.html
     - text: "Repositorios"
       href: si.html
-    - text: "Acerca de"
+    - text: "Fuente"
       href: about.html
 output:
   html_document:
